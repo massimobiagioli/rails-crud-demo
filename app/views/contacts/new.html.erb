@@ -1,29 +1,3 @@
-<h1>New Contact Page</h1>
+<h1 class="col-start-1 col-end-3 mb-5">New Contact</h1>
 
-<%= form_with model: @contact, url: contacts_path do |form| %>
-
-    <div class="field">
-        <%= form.label :first_name %>
-        <%= form.text_field :first_name %>
-    </div>
-
-    <div class="field">
-        <%= form.label :last_name %>
-        <%= form.text_field :last_name %>
-    </div>
-
-    <div class="field">
-        <%= form.label :email %>
-        <%= form.text_field :email %>
-    </div>
-
-    <div class="field">
-        <%= form.label :phone %>
-        <%= form.text_field :phone %>
-    </div>
-
-    <div class="actions">
-        <%= form.submit 'Create Contact' %>
-    </div>
-
-<% end %>
+<%= render 'form' %>

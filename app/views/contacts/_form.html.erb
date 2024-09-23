@@ -1,0 +1,27 @@
+<%= form_with model: @contact, local: true do |form| %>
+
+    <div class="field">
+        <%= form.label :first_name, class: 'form-label' %>
+        <%= form.text_field :first_name, class: 'form-text-input', placeholder: 'Enter first name' %>
+    </div>
+
+    <div class="field">
+        <%= form.label :last_name, class: 'form-label' %>
+        <%= form.text_field :last_name, class: 'form-text-input', placeholder: 'Enter last name' %>
+    </div>
+
+    <div class="field">
+        <%= form.label :email, class: 'form-label' %>
+        <%= form.text_field :email, class: 'form-text-input', placeholder: 'Enter email' %>
+    </div>
+
+    <div class="field">
+        <%= form.label :phone, class: 'form-label' %>
+        <%= form.text_field :phone, class: 'form-text-input', placeholder: 'Enter phone' %>
+    </div>
+
+    <div class="actions">
+        <%= form.submit 'Save', class: 'btn-primary' %>
+    </div>
+
+<% end %>
